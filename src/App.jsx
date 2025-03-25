@@ -30,21 +30,29 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #E6E6FA;
+  background-color: #FCDFFF;
   justify-content: space-evenly;
 `
 
-const Title = styled.p``
+const Title = styled.p`
+  font-size: 50px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+`
 
-const Subtitle = styled.p``
+const Subtitle = styled.p`
+  font-size: 20px;
+  font-weight: 400;
+  font-family: "Montserrat", sans-serif;
+`
 
 const Input = styled.input`
   width: 20%;
-  height: 30px;
+  height: 35px;
   border-radius: 55px;
-  border: 1px solid #FFDFDD;
+  border: 2px solid #FFDFDD;
   box-sizing: border-box;
-  padding-left: 10px;
+  padding-left: 15px;
 `
 
 const Img = styled.img`
