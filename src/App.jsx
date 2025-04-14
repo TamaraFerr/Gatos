@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Gatinho from "./assets/gatinho.jpg"
-import { TiHeartFullOutline } from "react-icons/ti";
+import { TfiSearch } from "react-icons/tfi";
 
 function App() {
   return (
@@ -9,18 +9,19 @@ function App() {
         <h1>Bem-vindo ao gerador de gatinhos!!</h1>
         <h2>Aqui você pode gerar fotos aleatórias de gatos e até mesmo dar nomes a alguns</h2>
 
-
-        <Input 
-          type="text"
-          placeholder= "Dê nome ao seu gatinho aqui!"
-        />
+        <InputContent>
+          <Input 
+            type="text"
+            placeholder= "Dê nome ao seu gatinho aqui!"
+          />
+          <TfiSearch 
+            color='#C83F49'
+            width='15px'
+          />
+        </InputContent>
 
         <Content>
           <Img src={Gatinho} alt="gatinho filhote fofo"/>
-          <TiHeartFullOutline 
-            size='50px'
-            color= '#36454F'
-          />
         </Content>
 
         <Button>Gerar gato</Button>
@@ -58,7 +59,7 @@ const Container = styled.div`
 `
 
 const Input = styled.input`
-  width: 25%;
+  width: 20%;
   height: 35px;
   border-radius: 55px;
   border: 2px solid #FFDFDD;
@@ -104,4 +105,12 @@ const Content = styled.div`
   align-items: center;
   width: 80%;
   height: 40%;
+`
+
+const InputContent = styled.div`
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 10%;
 `
