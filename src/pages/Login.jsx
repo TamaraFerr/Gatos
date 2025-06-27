@@ -8,19 +8,19 @@ export default function Login() {
         <h1>Seja bem-vindo ao nosso App, faça login e aproveite as fotos!</h1>
       </div>
 
-      <div>
-        <input 
+      <Form>
+        <Input 
           placeholder="E-mail"
           type="text"
         />
 
-        <input 
+        <Input 
           placeholder="Sua senha"
           type="password"
         />
 
-        <button>Entrar</button>
-      </div>
+        <Button>Entrar</Button>
+      </Form>
 
       <Link to={"/cadastro"}>
         Primeira vez? Cadastre-se para aproveitar!
@@ -36,4 +36,40 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+`
+
+const Form = styled.div`
+  box-sizing: border-box;
+  display; flex;
+  flex-direction: column;
+  width: 350px;
+`
+
+const Input = styled.input`
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  margin-buttom: 15px;
+  padding-left: 15px;
+`
+
+const Button = styled.button`
+  width: 100%;
+  height: 40px;
+  border: 1px solid #000000;
+  background-color: pink;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 15px;
+  color: #f6f6f6;
+  cursor: pointer;
+  transition: all 100ms;
+  &:hover{
+    color: #000000;
+    background-color: white;
+    border: 2px solid pink;
+  }
 `
